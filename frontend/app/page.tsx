@@ -35,7 +35,7 @@ export default function ResearchDashboard() {
     setError(null);
 
     try {
-      const { data } = await axios.post('http://localhost:3000/research/ask', { 
+      const { data } = await axios.post('https://week9day1backend-mu.vercel.app/research/ask', { 
         question: question.trim() 
       });
       setResult(data);
